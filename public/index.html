@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>        
+<h1>Users</h1>
+<h3>Create New Users</h3>
+<form id="UserParameters" action="/users" method="GET">
+    <div class="genderSelection">
+        <label for="gender">User Genders</label>
+        <select name="gender" id="gender">
+            <option value="">Both</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <!-- <input type="text" name="gender" id=""> -->
+    <button id="btn">Create New Users</button>
+</form>
+<div id="users">
+</div>
+</body>
+</html>
